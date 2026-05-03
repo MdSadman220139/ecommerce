@@ -1,5 +1,6 @@
 import 'package:ecommerce/app/app_configuration.dart';
 import 'package:ecommerce/app/assets_path.dart';
+import 'package:ecommerce/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -25,7 +26,9 @@ class _SplashScreenState extends State<SplashScreen> {
               SvgPicture.asset('assets/images/logo.svg', width: 128),
               Spacer(),
               CircularProgressIndicator(),
-              Text('Version ${AppConfiguration.currentAppVersion}'),
+              Text(
+                '${AppLocalizations.of(context)!.helloWorld}Version ${AppConfiguration.currentAppVersion}',
+              ),
               const SizedBox(height: 32),
             ],
           ),
