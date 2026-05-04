@@ -1,4 +1,14 @@
 {
-  "@@locale": "en",
-  "helloWorld": "Hello World en"
+  
+  "version": "Version",
+  "welcomeBack": "Welcome Back",
+  "enterYourPasswordandEmail": "Enter your email and password",
+  "email": "Email",
+  "password": "password",
+  "signIn": "Sign In",
+
+
+
+
+
 }

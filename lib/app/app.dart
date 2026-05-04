@@ -21,6 +21,39 @@ class _ecommerceAppState extends State<ecommerceApp> {
       theme: ThemeData(
         colorSchemeSeed: AppColors.themeColor,
         scaffoldBackgroundColor: Colors.white,
+        textTheme: TextTheme(
+          titleLarge: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.w600,
+            color: Colors.black,
+          ),
+        ),
+        inputDecorationTheme: InputDecorationTheme(
+          contentPadding: EdgeInsets.symmetric(horizontal: 16),
+          border: OutlineInputBorder(
+            borderSide: BorderSide(color: AppColors.themeColor),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: AppColors.themeColor),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: AppColors.themeColor),
+          ),
+          hintStyle: TextStyle(color: Colors.grey, fontWeight: FontWeight.w400),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            minimumSize: Size(double.infinity, 48),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+            ),
+            backgroundColor: AppColors.themeColor,
+            foregroundColor: Colors.white,
+          ),
+        ),
       ),
       localizationsDelegates: [
         AppLocalizations.delegate,

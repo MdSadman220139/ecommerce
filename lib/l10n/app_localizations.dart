@@ -103,6 +103,8 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hello World en'**
   String get helloWorld;
+
+  get version => null;
 }
 
 class _AppLocalizationsDelegate
