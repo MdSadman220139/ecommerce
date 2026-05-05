@@ -9,5 +9,20 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get helloWorld => 'Hello World en';
+  String get version => 'Version';
+
+  @override
+  String get welcomeBack => 'Welcome Back';
+
+  @override
+  String get enterYourPasswordandEmail => 'Enter your email and password';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get password => 'password';
+
+  @override
+  String get signIn => 'Sign In';
 }

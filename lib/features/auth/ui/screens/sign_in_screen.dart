@@ -1,3 +1,4 @@
+import 'package:ecommerce/core/extension/localization_extension.dart';
 import 'package:ecommerce/features/auth/ui/widgets/app_logo_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -23,21 +24,33 @@ class _SignInScreenState extends State<SignInScreen> {
               const SizedBox(height: 68),
               Applogo(),
               const SizedBox(height: 24),
-              Text("Welcome Back", style: textTheme.titleLarge),
+              Text(
+                context.localization.welcomeBack,
+                style: textTheme.titleLarge,
+              ),
               const SizedBox(height: 8),
               Text(
-                "Enter your email and password  ",
+                context.localization.enterYourPasswordandEmail,
                 style: TextStyle(fontSize: 16, color: Colors.grey[600]),
               ),
               const SizedBox(height: 16),
-              TextFormField(decoration: InputDecoration(hintText: "Email")),
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: context.localization.email,
+                ),
+              ),
               const SizedBox(height: 8),
               TextFormField(
-                decoration: InputDecoration(hintText: "Password"),
+                decoration: InputDecoration(
+                  hintText: context.localization.password,
+                ),
                 obscureText: true,
               ),
               const SizedBox(height: 16),
-              ElevatedButton(onPressed: () {}, child: Text("Sign In")),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text(context.localization.signIn),
+              ),
             ],
           ),
         ),

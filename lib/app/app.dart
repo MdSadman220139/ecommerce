@@ -61,7 +61,7 @@ class _ecommerceAppState extends State<ecommerceApp> {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      locale: Locale('bn'),
+      locale: Locale('en'),
       supportedLocales: [
         Locale('en'), // English
         Locale('bn'), // Bengali
