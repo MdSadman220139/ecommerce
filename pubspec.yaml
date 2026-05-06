@@ -23,6 +23,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_gen: ^5.14.1
+  firebase_core: ^4.7.0
   
 
 

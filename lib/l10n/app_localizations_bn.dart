@@ -9,20 +9,20 @@ class AppLocalizationsBn extends AppLocalizations {
   AppLocalizationsBn([String locale = 'bn']) : super(locale);
 
   @override
-  String get version => 'Version [bn]';
+  String get version => 'সংস্করণ';
 
   @override
-  String get welcomeBack => 'Welcome Back[bn]';
+  String get welcomeBack => 'আবারও স্বাগতম';
 
   @override
-  String get enterYourPasswordandEmail => 'Enter your email and password[bn]';
+  String get enterYourPasswordandEmail => 'আপনার ইমেল এবং পাসওয়ার্ড লিখুন';
 
   @override
-  String get email => 'Email[bn]';
+  String get email => 'ইমেইল';
 
   @override
-  String get password => 'password[bn]';
+  String get password => 'পাসওয়ার্ড';
 
   @override
-  String get signIn => 'Sign In[bn]';
+  String get signIn => 'সাইন ইন';
 }

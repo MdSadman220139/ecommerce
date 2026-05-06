@@ -1,8 +1,8 @@
 {
- "version": "Version [bn]",
-  "welcomeBack": "Welcome Back[bn]",
-  "enterYourPasswordandEmail": "Enter your email and password[bn]",
-  "email": "Email[bn]",
-  "password": "password[bn]",
-  "signIn": "Sign In[bn]",
+ "version": "সংস্করণ",
+  "welcomeBack": "আবারও স্বাগতম",
+  "enterYourPasswordandEmail": "আপনার ইমেল এবং পাসওয়ার্ড লিখুন",
+  "email": "ইমেইল",
+  "password": "পাসওয়ার্ড",
+  "signIn": "সাইন ইন"
 }
