@@ -4,5 +4,13 @@
   "enterYourPasswordandEmail": "আপনার ইমেল এবং পাসওয়ার্ড লিখুন",
   "email": "ইমেইল",
   "password": "পাসওয়ার্ড",
-  "signIn": "সাইন ইন"
+  "signIn": "সাইন ইন",
+  "registerYourAccount": "আপনার অ্যাকাউন্ট নিবন্ধন করুন",
+  "getStartedWithYourDetails": "আপনার বিবরণ দিয়ে শুরু করুন",
+  "firstName": "প্রথম নাম",
+  "lastName": "পদবি",
+  "city": "শহর",
+  "mobile": "মোবাইল",
+  "deliveryAddress": "ডেলিভারি ঠিকানা ",
+  "signUp": "সাইন আপ"
 }

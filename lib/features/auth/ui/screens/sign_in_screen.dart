@@ -1,6 +1,9 @@
+import 'package:ecommerce/app/app_colours.dart';
 import 'package:ecommerce/core/extension/localization_extension.dart';
+import 'package:ecommerce/features/auth/ui/screens/sign_up_screen.dart';
 import 'package:ecommerce/features/auth/ui/widgets/app_logo_widget.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -49,11 +52,27 @@ class _SignInScreenState extends State<SignInScreen> {
               ),
               const SizedBox(height: 16),
               ElevatedButton(
-                onPressed: () {
-                  FirebaseCrashlytics.instance.log('Sign In button pressed');
-                  throw Exception('Test Crash'); // Test Crash for Crashlytics
-                },
+                onPressed: () {},
                 child: Text(context.localization.signIn),
+              ),
+              const SizedBox(height: 16),
+              RichText(
+                text: TextSpan(
+                  children: [
+                    const TextSpan(
+                      text: 'Don’t have an account? ',
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    TextSpan(
+                      text: 'Sign Up',
+                      style: const TextStyle(color: AppColors.themeColor),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Navigator.pushNamed(context, SignUpScreen.name);
+                        },
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

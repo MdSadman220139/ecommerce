@@ -25,4 +25,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get signIn => 'সাইন ইন';
+
+  @override
+  String get registerYourAccount => 'আপনার অ্যাকাউন্ট নিবন্ধন করুন';
+
+  @override
+  String get getStartedWithYourDetails => 'আপনার বিবরণ দিয়ে শুরু করুন';
+
+  @override
+  String get firstName => 'প্রথম নাম';
+
+  @override
+  String get lastName => 'পদবি';
+
+  @override
+  String get city => 'শহর';
+
+  @override
+  String get mobile => 'মোবাইল';
+
+  @override
+  String get deliveryAddress => 'ডেলিভারি ঠিকানা ';
+
+  @override
+  String get signUp => 'সাইন আপ';
 }

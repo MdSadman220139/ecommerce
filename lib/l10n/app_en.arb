@@ -5,7 +5,15 @@
   "enterYourPasswordandEmail": "Enter your email and password",
   "email": "Email",
   "password": "password",
-  "signIn": "Sign In"
+  "signIn": "Sign In",
+  "registerYourAccount": "Register your account",
+  "getStartedWithYourDetails": "Get started with your details",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "city": "City",
+  "mobile": "Mobile",
+  "deliveryAddress": "Delivery Address",
+  "signUp": "Sign Up"
 
 
 }
