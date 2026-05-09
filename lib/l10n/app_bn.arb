@@ -12,5 +12,9 @@
   "city": "শহর",
   "mobile": "মোবাইল",
   "deliveryAddress": "ডেলিভারি ঠিকানা ",
-  "signUp": "সাইন আপ"
+  "signUp": "সাইন আপ",
+   "a4digitCodeHasBeenSent": "একটি ৪-সংখ্যার কোড পাঠানো হয়েছে",
+   "next": "পরবর্তী" ,
+     "enterOtpCode": "OTP কোড লিখুন"
+
 }

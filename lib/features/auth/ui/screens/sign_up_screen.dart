@@ -1,6 +1,7 @@
 import 'package:ecommerce/app/app_colours.dart';
 import 'package:ecommerce/core/extension/localization_extension.dart';
 import 'package:ecommerce/features/auth/ui/screens/sign_in_screen.dart';
+import 'package:ecommerce/features/auth/ui/screens/veify_otp_screen.dart';
 import 'package:ecommerce/features/auth/ui/widgets/app_logo_widget.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/gestures.dart';
@@ -108,7 +109,7 @@ final GlobalKey<FormState>  _formKey = GlobalKey<FormState>();
                 const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: () {
-                    // Test Crash for Crashlytics
+                   _onTapSignUpButton();
                   },
                   child: Text(context.localization.signUp),
                 ),
@@ -137,6 +138,10 @@ final GlobalKey<FormState>  _formKey = GlobalKey<FormState>();
         ),
       ),
     );
+  }
+
+  void _onTapSignUpButton(){
+       Navigator.pushNamed(context, VerifyOtpScreen.name);
   }
 
 @override

@@ -49,4 +49,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get signUp => 'Sign Up';
+
+  @override
+  String get enterOtpCode => 'Enter OTP Code';
+
+  @override
+  String get a4digitCodeHasBeenSent => 'A 4 digit code has been sent';
+
+  @override
+  String get verify => 'Verify';
 }

@@ -181,6 +181,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sign Up'**
   String get signUp;
+
+  /// No description provided for @enterOtpCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter OTP Code'**
+  String get enterOtpCode;
+
+  /// No description provided for @a4digitCodeHasBeenSent.
+  ///
+  /// In en, this message translates to:
+  /// **'A 4 digit code has been sent'**
+  String get a4digitCodeHasBeenSent;
+
+  /// No description provided for @verify.
+  ///
+  /// In en, this message translates to:
+  /// **'Verify'**
+  String get verify;
 }
 
 class _AppLocalizationsDelegate

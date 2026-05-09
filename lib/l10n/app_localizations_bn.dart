@@ -49,4 +49,13 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get signUp => 'সাইন আপ';
+
+  @override
+  String get enterOtpCode => 'OTP কোড লিখুন';
+
+  @override
+  String get a4digitCodeHasBeenSent => 'একটি ৪-সংখ্যার কোড পাঠানো হয়েছে';
+
+  @override
+  String get verify => 'Verify';
 }

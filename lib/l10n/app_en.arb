@@ -13,7 +13,10 @@
   "city": "City",
   "mobile": "Mobile",
   "deliveryAddress": "Delivery Address",
-  "signUp": "Sign Up"
+  "signUp": "Sign Up",
+  "enterOtpCode": "Enter OTP Code",
+  "a4digitCodeHasBeenSent": "A 4 digit code has been sent",
+  "verify": "Verify"  
 
 
 }
