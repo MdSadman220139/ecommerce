@@ -54,7 +54,9 @@ class _ecommerceAppState extends State<ecommerceApp> {
             foregroundColor: Colors.white,
           ),
         ),
+        appBarTheme: AppBarTheme(backgroundColor: Colors.white),
       ),
+
       localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,

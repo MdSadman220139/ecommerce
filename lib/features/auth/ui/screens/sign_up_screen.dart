@@ -32,112 +32,117 @@ final GlobalKey<FormState>  _formKey = GlobalKey<FormState>();
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Form(
-            key: _formKey,
-            child: Column(
-              children: [
-                const SizedBox(height: 68),
-                Applogo(),
-                const SizedBox(height: 24),
-                Text(
-                  context.localization.registerYourAccount,
-                  style: textTheme.titleLarge,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  context.localization.getStartedWithYourDetails,
-                  style: TextStyle(fontSize: 16, color: Colors.grey[600]),
-                ),
-                const SizedBox(height: 24),
-                TextFormField(
-                  controller: _emailTEController,
-                  keyboardType: TextInputType.emailAddress,
-                  textInputAction: TextInputAction.next,
-                  decoration: InputDecoration(
-                    hintText: context.localization.email,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                TextFormField(
-                  controller: _firstNameTEController,
-                  textInputAction: TextInputAction.next,
-                  decoration: InputDecoration(
-                    hintText: context.localization.firstName,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                TextFormField(
-                  controller: _lastNameTEController,
-                  textInputAction: TextInputAction.next,
-                  decoration: InputDecoration(
-                    hintText: context.localization.lastName,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                TextFormField(
-                  controller: _mobileTEController,
-                  keyboardType: TextInputType.number,
-                  textInputAction: TextInputAction.next,
-                  decoration: InputDecoration(
-                    hintText: context.localization.mobile,
-                  ),
-                ),
-            
-                const SizedBox(height: 8),
-                TextFormField(
-                  controller: _passwordTEController,
-                  obscureText: true,
-                  textInputAction: TextInputAction.next,
-                  decoration: InputDecoration(
-                    hintText: context.localization.password,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                TextFormField(
-                  controller: _deliveryAddressTEController,
-                  maxLines: 3,
-                  textInputAction: TextInputAction.done,
-                  decoration: InputDecoration(
-                    hintText: context.localization.deliveryAddress,
-                    contentPadding: EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 16,
-                    ),
-                  ),
-                ),
-            
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: () {
-                   _onTapSignUpButton();
-                  },
-                  child: Text(context.localization.signUp),
-                ),
-                const SizedBox(height: 16),
-                RichText(
-                  text: TextSpan(
-                    children: [
-                      const TextSpan(
-                        text: 'Already have an account? ',
-                        style: TextStyle(color: Colors.black),
-                      ),
-                      TextSpan(
-                        text: 'Sign In',
-                        style: const TextStyle(color: AppColors.themeColor),
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            Navigator.pop(context, SignInScreen.name);
-                          },
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
+          child: _buildForm( textTheme),
         ),
       ),
     );
+  }
+  
+
+  Widget _buildForm( TextTheme textTheme) {
+    return Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              const SizedBox(height: 68),
+              Applogo(),
+              const SizedBox(height: 24),
+              Text(
+                context.localization.registerYourAccount,
+                style: textTheme.titleLarge,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                context.localization.getStartedWithYourDetails,
+                style: TextStyle(fontSize: 16, color: Colors.grey[600]),
+              ),
+              const SizedBox(height: 24),
+              TextFormField(
+                controller: _emailTEController,
+                keyboardType: TextInputType.emailAddress,
+                textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  hintText: context.localization.email,
+                ),
+              ),
+              const SizedBox(height: 8),
+              TextFormField(
+                controller: _firstNameTEController,
+                textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  hintText: context.localization.firstName,
+                ),
+              ),
+              const SizedBox(height: 8),
+              TextFormField(
+                controller: _lastNameTEController,
+                textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  hintText: context.localization.lastName,
+                ),
+              ),
+              const SizedBox(height: 8),
+              TextFormField(
+                controller: _mobileTEController,
+                keyboardType: TextInputType.number,
+                textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  hintText: context.localization.mobile,
+                ),
+              ),
+          
+              const SizedBox(height: 8),
+              TextFormField(
+                controller: _passwordTEController,
+                obscureText: true,
+                textInputAction: TextInputAction.next,
+                decoration: InputDecoration(
+                  hintText: context.localization.password,
+                ),
+              ),
+              const SizedBox(height: 8),
+              TextFormField(
+                controller: _deliveryAddressTEController,
+                maxLines: 3,
+                textInputAction: TextInputAction.done,
+                decoration: InputDecoration(
+                  hintText: context.localization.deliveryAddress,
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 16,
+                  ),
+                ),
+              ),
+          
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () {
+                 _onTapSignUpButton();
+                },
+                child: Text(context.localization.signUp),
+              ),
+              const SizedBox(height: 16),
+              RichText(
+                text: TextSpan(
+                  children: [
+                    const TextSpan(
+                      text: 'Already have an account? ',
+                      style: TextStyle(color: Colors.black),
+                    ),
+                    TextSpan(
+                      text: 'Sign In',
+                      style: const TextStyle(color: AppColors.themeColor),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Navigator.pop(context, SignInScreen.name);
+                        },
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        );
   }
 
   void _onTapSignUpButton(){
