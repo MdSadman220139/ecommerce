@@ -13,8 +13,9 @@
   "mobile": "মোবাইল",
   "deliveryAddress": "ডেলিভারি ঠিকানা ",
   "signUp": "সাইন আপ",
-   "a4digitCodeHasBeenSent": "একটি ৪-সংখ্যার কোড পাঠানো হয়েছে",
-   "next": "পরবর্তী" ,
-     "enterOtpCode": "OTP কোড লিখুন"
-
+  "a4digitCodeHasBeenSent": "একটি ৪-সংখ্যার কোড পাঠানো হয়েছে",
+  "next": "পরবর্তী" ,
+  "enterOtpCode":"OTP কোড লিখুন",
+  "ctaegories":"ক্যাটাগরি",
+  "seeAll":"সব দেখুন"
 }

@@ -16,7 +16,8 @@
   "signUp": "Sign Up",
   "enterOtpCode": "Enter OTP Code",
   "a4digitCodeHasBeenSent": "A 4 digit code has been sent",
-  "verify": "Verify"  
-
+  "verify": "Verify" , 
+  "ctaegories":"Categories",
+  "seeAll": "See all"
 
 }

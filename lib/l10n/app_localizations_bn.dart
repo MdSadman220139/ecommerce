@@ -58,4 +58,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get verify => 'Verify';
+
+  @override
+  String get ctaegories => 'ক্যাটাগরি';
+
+  @override
+  String get seeAll => 'সব দেখুন';
 }
