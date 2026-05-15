@@ -211,6 +211,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See all'**
   String get seeAll;
+
+  /// No description provided for @popular.
+  ///
+  /// In en, this message translates to:
+  /// **'Popular'**
+  String get popular;
 }
 
 class _AppLocalizationsDelegate

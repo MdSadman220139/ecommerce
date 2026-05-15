@@ -64,4 +64,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get seeAll => 'সব দেখুন';
+
+  @override
+  String get popular => 'জনপ্রিয়';
 }

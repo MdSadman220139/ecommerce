@@ -21,20 +21,29 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBarDesign(),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            _buildSearchTextField(),
-            const SizedBox(height: 16),
-            HomeCarouselSlider(),
-            SectionHeader(
-              tittle: context.localization.ctaegories,
-              onTapSeeAll: () {},
-            ),
-            const SizedBox(height: 16),
-            _buildCategorySection(),
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              _buildSearchTextField(),
+              const SizedBox(height: 16),
+              HomeCarouselSlider(),
+              SectionHeader(
+                tittle: context.localization.ctaegories,
+                onTapSeeAll: () {},
+              ),
+              const SizedBox(height: 16),
+              _buildCategorySection(),
+              const SizedBox(height: 16),
+              SectionHeader(
+                tittle: context.localization.popular,
+                onTapSeeAll: () {},
+              ),
+              
+            
+            ],
+          ),
         ),
       ),
     );
@@ -42,18 +51,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildCategorySection() {
     return const SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                CategoryItem(),
-                CategoryItem(),
-                CategoryItem(),
-                CategoryItem(),
-                CategoryItem(),
-                CategoryItem(),
-              ],
-            ),
-          );
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+        ],
+      ),
+    );
   }
 
   Widget _buildSearchTextField() {
@@ -91,5 +100,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-
