@@ -67,4 +67,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get popular => 'জনপ্রিয়';
+
+  @override
+  String get new_level => 'নতুন';
+
+  @override
+  String get special => 'বিশেষ';
 }

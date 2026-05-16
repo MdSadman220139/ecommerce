@@ -19,6 +19,8 @@
   "verify": "Verify" , 
   "ctaegories":"Categories",
   "seeAll": "See all",
-  "popular":"Popular"
+  "popular":"Popular",
+  "new_level":"New",
+  "special":"Special"
 
 }

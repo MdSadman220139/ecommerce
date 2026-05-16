@@ -67,4 +67,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get popular => 'Popular';
+
+  @override
+  String get new_level => 'New';
+
+  @override
+  String get special => 'Special';
 }

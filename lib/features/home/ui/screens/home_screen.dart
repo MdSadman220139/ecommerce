@@ -1,10 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ecommerce/app/app_colours.dart';
-import 'package:ecommerce/app/assets_path.dart';
 import 'package:ecommerce/core/extension/localization_extension.dart';
 import 'package:ecommerce/features/home/ui/widgets/app_bar_action_button.dart';
 import 'package:ecommerce/features/home/ui/widgets/category_item_widget.dart';
 import 'package:ecommerce/features/home/ui/widgets/home_carousel_slider_widget.dart';
+import 'package:ecommerce/features/home/ui/widgets/product_card_widget.dart';
 import 'package:ecommerce/features/home/ui/widgets/section_header_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -40,11 +38,34 @@ class _HomeScreenState extends State<HomeScreen> {
                 tittle: context.localization.popular,
                 onTapSeeAll: () {},
               ),
-              
-            
+              const SizedBox(height: 16),
+              _buildPopularProductCards(),
+              const SizedBox(height: 16),
+              SectionHeader(
+                tittle: context.localization.special,
+                onTapSeeAll: () {},
+              ),
+              const SizedBox(height: 16),
+              _buildPopularProductCards(),
+              const SizedBox(height: 16),
+              SectionHeader(
+                tittle: context.localization.new_level,
+                onTapSeeAll: () {},
+              ),
+              const SizedBox(height: 16),
+              _buildPopularProductCards(),
             ],
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildPopularProductCards() {
+    return const SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [ProductCard(), ProductCard(), ProductCard(), ProductCard()],
       ),
     );
   }

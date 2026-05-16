@@ -217,6 +217,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Popular'**
   String get popular;
+
+  /// No description provided for @new_level.
+  ///
+  /// In en, this message translates to:
+  /// **'New'**
+  String get new_level;
+
+  /// No description provided for @special.
+  ///
+  /// In en, this message translates to:
+  /// **'Special'**
+  String get special;
 }
 
 class _AppLocalizationsDelegate
