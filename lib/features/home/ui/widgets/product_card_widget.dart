@@ -2,9 +2,7 @@ import 'package:ecommerce/app/app_colours.dart';
 import 'package:flutter/material.dart';
 
 class ProductCard extends StatelessWidget {
-  const ProductCard({
-    super.key,
-  });
+  const ProductCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +21,7 @@ class ProductCard extends StatelessWidget {
                   topRight: Radius.circular(8),
                 ),
                 image: const DecorationImage(
-                  image: AssetImage('assets/images/nike-shoes-t.png'),
+                  image: AssetImage('assets/images/shoe.png'),
                   fit: BoxFit.scaleDown,
                 ),
               ),
@@ -52,11 +50,7 @@ class ProductCard extends StatelessWidget {
                       ),
                       Wrap(
                         children: [
-                          Icon(
-                            Icons.star,
-                            size: 18,
-                            color: Colors.orange,
-                          ),
+                          Icon(Icons.star, size: 18, color: Colors.orange),
                           Text('3.3'),
                         ],
                       ),
